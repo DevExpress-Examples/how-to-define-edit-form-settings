@@ -14,7 +14,7 @@
 - [MainWindow.xaml](./CS/DefineEditFormSettings_MVVM/MainWindow.xaml#L17)
 
 ### Code-Behind
-- [MainViewModel.xaml.cs](./CS/DefineEditFormSettings_CodeBehind/MainWindow.xaml.cs#L48-L58)
+- [MainViewModel.xaml.cs](./CS/DefineEditFormSettings_CodeBehind/MainWindow.xaml.cs#L48-L57)
 - [MainWindow.xaml](./CS/DefineEditFormSettings_CodeBehind/MainWindow.xaml#L13)
 
 <!-- default file list end -->

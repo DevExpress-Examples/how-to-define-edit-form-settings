@@ -46,7 +46,7 @@ namespace DefineEditFormSettings_CodeBehind {
         }
 
         private void OnRowEditStarting(object sender, RowEditStartingEventArgs e) {
-            if(e.RowHandle == DataControlBase.NewItemRowHandle) {
+            if(Equals(e.RowHandle, DataControlBase.NewItemRowHandle)) {
                 e.CellEditors[0].Value = grid.VisibleRowCount + 1;
                 e.CellEditors[4].ReadOnly = true;
 

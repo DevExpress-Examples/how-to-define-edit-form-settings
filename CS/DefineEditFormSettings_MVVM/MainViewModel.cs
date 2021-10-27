@@ -23,7 +23,7 @@ namespace DefineEditFormSettings_MVVM {
         [Command]
         public void OnRowEditStarting(RowEditStartingArgs args) {
             if(args.IsNewItem) {
-                args.CellEditors[0].Value = Employees.Count;
+                args.CellEditors[0].Value = Employees.Count + 1;
                 args.CellEditors[4].ReadOnly = true;
 
             } else {

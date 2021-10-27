@@ -81,7 +81,7 @@ Namespace DefineEditFormSettings_MVVM
         <Command>
         Public Sub OnRowEditStarting(ByVal args As RowEditStartingArgs)
             If args.IsNewItem Then
-                args.CellEditors(0).Value = Employees.Count
+                args.CellEditors(0).Value = Employees.Count + 1
                 args.CellEditors(4).[ReadOnly] = True
             Else
                 args.CellEditors(0).[ReadOnly] = True

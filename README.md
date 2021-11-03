@@ -5,11 +5,11 @@
 <!-- default badges end -->
 # Data Grid for WPF - How to Specify Edit Form Settings
 
-This example illustrates how to specify Edit Form settings when a user starts to edit a row. You can initialize values or make certain editors read-only. To do that, handle the [RowEditStarting](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.TableView.RowEditStarting) / [NodeEditStarting](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.TreeListView.NodeEditStarting) event or create a command in a View Model and bind it to the [RowEditStartingCommand](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.TableView.RowEditStartingCommand) / [NodeEditStartingCommand](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.TreeListView.NodeEditStarting) property. The event / command arguments contain the CellEditors property that returns an array of [](xref:DevExpress.Mvvm.CellEditorData) objects. Each object allows you to specify the corresponding editor's settings.
+This example illustrates how to specify Edit Form settings when a user starts to edit a row. You can initialize values or make certain editors read-only. To do that, handle the [RowEditStarting](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.TableView.RowEditStarting) / [NodeEditStarting](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.TreeListView.NodeEditStarting) event or create a command in a View Model and bind it to the [RowEditStartingCommand](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.TableView.RowEditStartingCommand) / [NodeEditStartingCommand](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.TreeListView.NodeEditStarting) property. The event / command arguments contain the **CellEditors** property that returns an array of [CellEditorData](https://docs.devexpress.com/CoreLibraries/DevExpress.Mvvm.CellEditorData) objects. Each object allows you to specify the corresponding editor's settings.
 
-The [GridControl](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridControl) contains information about employees. The following code sample initializes the ID editor (CellEditors[0] in code) and disables the Department editor (CellEditors[4]) for new rows. 
+The [GridControl](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridControl) contains information about employees. The following code sample initializes the **ID** editor (**CellEditors[0]** in code) and disables the **Department** editor (**CellEditors[4]**) for new rows. 
 
-
+![](/21-2-roweditstarting-example.png)
 ### Code-Behind
 
 ```cs

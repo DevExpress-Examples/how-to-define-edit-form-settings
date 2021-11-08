@@ -62,4 +62,4 @@ public void OnRowEditStarting(RowEditStartingArgs args) {
 
 ## More Examples
 - [Data Grid for WPF - How to Process Related Cells in the Edit Form](https://github.com/DevExpress-Examples/wpf-data-grid-edit-form-related-cells)
-- [Data Grid for WPF - How to Pause Data Updates In the Edit Form](https://github.com/DevExpress-Examples/wpf-data-grid-edit-form-pause-updates)
+- [Data Grid for WPF - How to Pause Data Updates in the Edit Form](https://github.com/DevExpress-Examples/wpf-data-grid-edit-form-pause-updates)

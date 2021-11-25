@@ -1,7 +1,6 @@
 Imports DevExpress.Mvvm
 Imports DevExpress.Mvvm.DataAnnotations
 Imports DevExpress.Mvvm.Xpf
-Imports DevExpress.Xpf.Grid
 Imports System.Collections.Generic
 Imports System.Collections.ObjectModel
 
@@ -82,10 +81,10 @@ Namespace DefineEditFormSettings_MVVM
         Public Sub OnRowEditStarting(ByVal args As RowEditStartingArgs)
             If args.IsNewItem Then
                 args.CellEditors(0).Value = Employees.Count + 1
-                args.CellEditors(4).[ReadOnly] = True
+                args.CellEditors(4).ReadOnly = True
             Else
-                args.CellEditors(0).[ReadOnly] = True
-                args.CellEditors(4).[ReadOnly] = False
+                args.CellEditors(0).ReadOnly = True
+                args.CellEditors(4).ReadOnly = False
             End If
         End Sub
 

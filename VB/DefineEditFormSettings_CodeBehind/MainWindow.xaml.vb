@@ -63,8 +63,8 @@ Namespace DefineEditFormSettings_CodeBehind
         Inherits Window
 
         Public Sub New()
-            InitializeComponent()
-            grid.ItemsSource = New List(Of Employee)(GetEmployees())
+            Me.InitializeComponent()
+            Me.grid.ItemsSource = New List(Of Employee)(GetEmployees())
         End Sub
 
         Private Iterator Function GetEmployees() As IEnumerable(Of Employee)
@@ -90,11 +90,11 @@ Namespace DefineEditFormSettings_CodeBehind
 
         Private Sub OnRowEditStarting(ByVal sender As Object, ByVal e As RowEditStartingEventArgs)
             If Equals(e.RowHandle, DataControlBase.NewItemRowHandle) Then
-                e.CellEditors(0).Value = grid.VisibleRowCount + 1
-                e.CellEditors(4).[ReadOnly] = True
+                e.CellEditors(0).Value = Me.grid.VisibleRowCount + 1
+                e.CellEditors(4).ReadOnly = True
             Else
-                e.CellEditors(0).[ReadOnly] = True
-                e.CellEditors(4).[ReadOnly] = False
+                e.CellEditors(0).ReadOnly = True
+                e.CellEditors(4).ReadOnly = False
             End If
         End Sub
     End Class
